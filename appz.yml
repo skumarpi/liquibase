@@ -1,0 +1,38 @@
+app:
+  name: liquibase
+  code: LIQUIBASE
+  notify: appzdev@cloudbourne.co
+
+build:
+  version: 3.8
+  env: DEV
+  build_file: none
+  output_files: output/*.zip
+  image_template: liquibase-3.8
+
+deploy:
+  context: alpha/DEV
+  replicas: 1
+  type: statefulset
+  
+volumes:
+- claim: liquibase-data
+  mount: /var/lib/liquibase
+  name: data
+  size: 5Gi   
+- claim: liquibase-backup
+  mount: /appz/backup
+  name: backup
+  size: 5Gi 
+  
+properties:
+  SQL_SERVER :
+     vault: SQL_SERVER
+  DB_NAME: 
+     vault: DB_NAME
+  DB_USERNAME: 
+     vault: DB_USERNAME
+  DB_PASSWORD:
+     vault: DB_PASSWORD
+  url: jdbc:sqlserver://SQL_SERVER:1433
+  revision : 11
