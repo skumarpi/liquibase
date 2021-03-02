@@ -1,7 +1,7 @@
 app:
   name: liquibase
   code: LIQUIBASE
-  notify: akanade@ecloudcontrol.com
+  notify: skumar@ecloudcontrol.com
 
 build:
   version: 3.8
@@ -11,13 +11,13 @@ build:
   image_template: liquibase-3.8
 
 deploy:
-  context: abhikanade-cc/DEV
+  context: skumarpi/DEV
   replicas: 1
   type: statefulset
   
 volumes:
 - claim: liquibase-data
-  mount: /var/lib/liquibase
+  mount: /appz/data
   name: data
   size: 5Gi   
   
