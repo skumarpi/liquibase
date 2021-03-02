@@ -1,4 +1,4 @@
-insert jobs values ('New Hire - Job not specified', 10, 10)
+insert jobs values ('Again New Hire - Job not specified', 10, 10)
 insert jobs values ('Chief Executive Officer', 200, 250)
 insert jobs values ('Business Operations Manager', 175, 225)
 insert jobs values ('Chief Financial Officier', 175, 250)
