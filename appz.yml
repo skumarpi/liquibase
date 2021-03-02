@@ -13,13 +13,7 @@ build:
 deploy:
   context: skumarpi/DEV
   replicas: 1
-  type: statefulset
-  
-volumes:
-- claim: liquibase-data
-  mount: /appz/data
-  name: data
-  size: 5Gi   
+   
   
 properties:
   SQL_SERVER: mssql-2017-2
