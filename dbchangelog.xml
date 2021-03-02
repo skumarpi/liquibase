@@ -12,9 +12,9 @@
           <sqlFile encoding="utf8" path="/appz/scripts/LiquibaseProj/sqlscripts/create2.sql"/>
   </changeSet>
   <changeSet id="3" author="user2">
-          <sqlFile encoding="utf8" path="/appz/scripts/LiquibaseProj/sqlscripts/AGENTS.sql"/>
+          <sqlFile encoding="utf8" path="/appz/scripts/LiquibaseProj/sqlscripts/jobs.sql"/>
   </changeSet>
   <changeSet id="4" author="user3">
-          <sqlFile encoding="utf8" path="/appz/scripts/LiquibaseProj/sqlscripts/agents_list.sql"/>
+          <sqlFile encoding="utf8" path="/appz/scripts/LiquibaseProj/sqlscripts/jobs_insert.sql"/>
   </changeSet>
 </databaseChangeLog>
