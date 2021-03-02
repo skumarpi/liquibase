@@ -1,7 +1,7 @@
 app:
   name: liquibase
   code: LIQUIBASE
-  notify: appzdev@cloudbourne.co
+  notify: akanade@ecloudcontrol.com
 
 build:
   version: 3.8
@@ -11,7 +11,7 @@ build:
   image_template: liquibase-3.8
 
 deploy:
-  context: alpha/DEV
+  context: abhikanade-cc/DEV
   replicas: 1
   type: statefulset
   
