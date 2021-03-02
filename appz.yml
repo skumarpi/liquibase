@@ -20,10 +20,6 @@ volumes:
   mount: /var/lib/liquibase
   name: data
   size: 5Gi   
-- claim: liquibase-backup
-  mount: /appz/backup
-  name: backup
-  size: 5Gi 
   
 properties:
   SQL_SERVER: mssql-2017-2
