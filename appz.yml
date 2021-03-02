@@ -27,4 +27,4 @@ properties:
   DB_USERNAME: appzuser
   DB_PASSWORD:
      vault: DB_PASSWORD
-  revision : 11
+  revision : 12
