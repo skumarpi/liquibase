@@ -26,13 +26,9 @@ volumes:
   size: 5Gi 
   
 properties:
-  SQL_SERVER :
-     vault: SQL_SERVER
-  DB_NAME: 
-     vault: DB_NAME
-  DB_USERNAME: 
-     vault: DB_USERNAME
+  SQL_SERVER: mssql-2017-2
+  DB_NAME: CLOUDCONTROL
+  DB_USERNAME: appzuser
   DB_PASSWORD:
      vault: DB_PASSWORD
-  url: jdbc:sqlserver://SQL_SERVER:1433
   revision : 11
