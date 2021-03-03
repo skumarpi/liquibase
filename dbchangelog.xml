@@ -8,4 +8,7 @@
   <changeSet id="1" author="user1">
          <sqlFile encoding="utf8" path="/appz/scripts/LiquibaseProj/sqlscripts/create1.sql"/>
   </changeSet>
+  <changeSet id="2" author="user2">
+         <sqlFile encoding="utf8" path="/appz/scripts/LiquibaseProj/sqlscripts/create2.sql"/>
+  </changeSet>
 </databaseChangeLog>
