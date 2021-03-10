@@ -6,6 +6,21 @@
   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
          http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
   <changeSet id="1" author="user1">
-         <sqlFile encoding="utf8" path="/appz/scripts/LiquibaseProj/sqlscripts/create1.sql"/>
+         <sqlFile encoding="utf8" path="/appz/scripts/LiquibaseProj/sqlscripts/create-Persons.sql"/>
+  </changeSet>
+  <changeSet id="2" author="user2">
+          <sqlFile encoding="utf8" path="/appz/scripts/LiquibaseProj/sqlscripts/create-Customers.sql"/>
+  </changeSet>
+  <changeSet id="3" author="user2">
+          <sqlFile encoding="utf8" path="/appz/scripts/LiquibaseProj/sqlscripts/create-jobs.sql"/>
+  </changeSet>
+  <changeSet id="4" author="user3">
+          <sqlFile encoding="utf8" path="/appz/scripts/LiquibaseProj/sqlscripts/jobs_insert.sql"/>
+  </changeSet>
+  <changeSet id="5" author="user4">
+          <sqlFile encoding="utf8" path="/appz/scripts/LiquibaseProj/sqlscripts/Clients.sql"/>
+  </changeSet>
+  <changeSet id="6" author="user4">
+          <sqlFile encoding="utf8" path="/appz/scripts/LiquibaseProj/sqlscripts/insert_Clients.sql"/>
   </changeSet>
 </databaseChangeLog>
